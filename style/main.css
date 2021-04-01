@@ -1,3 +1,45 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/* zera a margem e o padding e adiciona
+o elemento border-box, que garante que os elementos
+respeitem os espaços das caixas. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Utiliza flex-box
+flex-direction, por default, deixa tudo
+em linha horizontal(row).*/
+header .container{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*alinha os elementos na vertical*/
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
 }
