@@ -12,9 +12,11 @@ respeitem os espaços das caixas. */
     box-sizing: border-box;
 }
 
+/*elementos base*/
 body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /*Utiliza flex-box
@@ -42,4 +44,28 @@ header nav a{
 
 header nav a:hover{
     color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;/*imagem se ajusta às dimensões da caixa*/
+    
+    /*as propriedades seguintes servem pra organizar o conteúdo da caixa
+    alinhando o mesmo ao centro.
+    Mais uma vez foi utilizado flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+
+.titulo{
+    font-size: 40px;
 }
