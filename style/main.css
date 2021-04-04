@@ -23,7 +23,6 @@ body {
 flex-direction, por default, deixa tudo
 em linha horizontal(row).*/
 header .container{
-    margin-left: 5px;
     display: flex;
     flex-direction: row;
     align-items: center; /*alinha os elementos na vertical*/
@@ -92,4 +91,12 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
 }
